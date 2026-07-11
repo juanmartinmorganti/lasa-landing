@@ -1,237 +1,229 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LASA Papelera</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#183b3d" />
     <meta
       name="description"
-      content="Fabricación y venta mayorista de productos de papel y cartón. Más de 60 años de trayectoria en La Plata."
+      content="LASA Papelera: fabricación y venta mayorista de productos de papel y cartón en Ringuelet, La Plata."
     />
+    <title>LASA Papelera | Papel y cartón para su negocio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Literata:opsz,wght@7..72,500;7..72,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="site-header">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header" data-header>
       <div class="container header-inner">
-        <a href="#" class="brand">
+        <a class="brand" href="#inicio" aria-label="LASA Papelera, inicio">
           <span class="brand-mark">LASA</span>
-          <span class="brand-text">Papelera</span>
+          <span class="brand-name">Papelera</span>
         </a>
 
-        <nav class="main-nav">
-          <a href="#historia">Historia</a>
-          <a href="#que-hacemos">Qué hacemos</a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="main-nav"
+          aria-label="Abrir menú"
+          data-menu-toggle
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="main-nav" id="main-nav" aria-label="Navegación principal" data-nav>
+          <a href="#empresa">Empresa</a>
           <a href="#productos">Productos</a>
+          <a href="#fabrica">Fábrica</a>
           <a href="#contacto">Contacto</a>
         </nav>
 
-        <a href="#contacto" class="btn btn-primary">Solicitar presupuesto</a>
+        <a class="button button-small header-cta" href="#contacto">Solicitar presupuesto</a>
       </div>
     </header>
 
-    <main>
-      <section class="hero">
-        <div class="hero-media"></div>
-        <div class="hero-overlay"></div>
-
-        <div class="container hero-content">
-          <p class="hero-kicker">LASA Papelera</p>
-          <h1>
-            Fabricación y venta mayorista de productos de papel y cartón
-          </h1>
-          <p class="hero-text">
-            Más de 60 años de trayectoria en La Plata, acompañando a comercios,
-            empresas y distribuidores con producción real, atención directa y
-            soluciones estándar y personalizadas.
-          </p>
-
-          <div class="hero-actions">
-            <a href="#contacto" class="btn btn-primary">Solicitar presupuesto</a>
-            <a href="#productos" class="btn btn-secondary">Ver productos</a>
+    <main id="contenido">
+      <section class="hero" id="inicio">
+        <div class="hero-grid container">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Industria papelera · Ringuelet, La Plata</p>
+            <h1>Papel y cartón para mover su negocio.</h1>
+            <p class="hero-lead">
+              Fabricación y venta mayorista con atención comercial directa y soluciones
+              estándar y personalizadas.
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="#contacto">Solicitar presupuesto</a>
+              <!-- Pendiente: reemplazar por enlace wa.me con el número oficial. -->
+              <a class="button button-ghost" href="#contacto">Hablar por WhatsApp</a>
+            </div>
           </div>
+
+          <div class="hero-visual reveal" aria-label="Espacio reservado para una fotografía real de la fábrica">
+            <div class="media-placeholder media-placeholder-hero">
+              <span class="placeholder-index">01</span>
+              <div>
+                <strong>Producción real</strong>
+                <span>Fotografía de fábrica pendiente</span>
+              </div>
+            </div>
+            <p class="hero-caption">Lorenzo Annecchini S.A.</p>
+          </div>
+        </div>
+        <div class="hero-rail" aria-hidden="true">
+          <span>Fabricación</span><span>Venta mayorista</span><span>Atención directa</span>
         </div>
       </section>
 
-      <section id="historia" class="section section-light">
-        <div class="container two-column">
-          <div class="section-copy">
-            <p class="section-label">Nuestra historia</p>
-            <h2>60 años de historia, trabajo y crecimiento</h2>
-            <p>
-              LASA Papelera es una empresa familiar de Ringuelet, La Plata, con
-              más de seis décadas de trayectoria en la fabricación y
+      <section class="section company" id="empresa">
+        <div class="container split-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Nuestra empresa</p>
+            <h2>Una papelera con historia y trabajo concreto.</h2>
+          </div>
+          <div class="company-copy reveal">
+            <p class="lead">
+              LASA Papelera es una empresa familiar dedicada a la fabricación y
               comercialización de productos de papel y cartón.
             </p>
             <p>
-              Crecimos incorporando maquinaria, ampliando capacidad y
-              acompañando las necesidades de nuestros clientes, manteniendo una
-              atención cercana y una lógica de trabajo real.
+              Desde Ringuelet acompañamos a comercios, empresas y distribuidores con una
+              estructura de producción real, relación directa y foco en cada necesidad comercial.
+            </p>
+            <div class="fact-row">
+              <div><strong>La Plata</strong><span>Industria local</span></div>
+              <div><strong>Mayorista</strong><span>Perfil comercial</span></div>
+              <div><strong>Familiar</strong><span>Continuidad y cercanía</span></div>
+            </div>
+            <p class="pending-note">
+              La antigüedad exacta y la historia institucional se publicarán cuando sean
+              confirmadas por la empresa.
             </p>
           </div>
-
-          <div class="section-visual visual-block">
-            <div class="visual-card">
-              <span>Empresa familiar</span>
-            </div>
-            <div class="visual-card">
-              <span>Trayectoria real</span>
-            </div>
-            <div class="visual-card">
-              <span>Producción propia</span>
-            </div>
-          </div>
         </div>
       </section>
 
-      <section id="que-hacemos" class="section section-dark">
-        <div class="container narrow">
-          <p class="section-label">Qué hacemos</p>
-          <h2>
-            Soluciones en papel y cartón para comercios, empresas y distribución
-            mayorista
-          </h2>
-          <p class="section-intro">
-            Trabajamos en la fabricación y venta mayorista de productos de papel
-            y cartón, con líneas estándar y opciones personalizadas para
-            distintos rubros y necesidades comerciales.
-          </p>
-        </div>
-      </section>
-
-      <section id="productos" class="section section-light">
+      <section class="section products" id="productos">
         <div class="container">
-          <p class="section-label">Productos</p>
-          <h2>Nuestras líneas de productos</h2>
-          <p class="section-intro">
-            Contamos con distintas líneas orientadas a clientes mayoristas,
-            comercios, distribuidores y empresas.
-          </p>
-
-          <div class="products-grid">
-            <article class="product-item">
-              <h3>Servilletas</h3>
-              <p>Opciones para distintos usos comerciales y gastronómicos.</p>
-            </article>
-
-            <article class="product-item">
-              <h3>Bolsas de papel</h3>
-              <p>Soluciones prácticas para presentación, entrega y despacho.</p>
-            </article>
-
-            <article class="product-item">
-              <h3>Bobinas</h3>
-              <p>Líneas orientadas a necesidades comerciales e industriales.</p>
-            </article>
-
-            <article class="product-item">
-              <h3>Productos de cartón</h3>
-              <p>Formatos útiles para comercios, embalaje y presentación.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-accent">
-        <div class="container two-column">
-          <div class="section-copy">
-            <p class="section-label">Por qué elegir LASA</p>
-            <h2>Trayectoria, producción y atención comercial directa</h2>
-          </div>
-
-          <ul class="features-list">
-            <li>Más de 60 años de experiencia en el rubro</li>
-            <li>Empresa familiar con continuidad generacional</li>
-            <li>Producción real y capacidad operativa</li>
-            <li>Atención mayorista</li>
-            <li>Opciones estándar y personalizadas</li>
-            <li>Relación directa con el cliente</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section section-light">
-        <div class="container two-column">
-          <div class="section-copy">
-            <p class="section-label">Planta y capacidad</p>
-            <h2>Una empresa real, con producción y operación concreta</h2>
+          <div class="section-heading heading-row reveal">
+            <div>
+              <p class="eyebrow">Líneas de productos</p>
+              <h2>Soluciones para comercios, empresas y distribución.</h2>
+            </div>
             <p>
-              Parte del valor de LASA está en su estructura real de trabajo:
-              planta, stock, movimiento operativo y trayectoria construida con
-              continuidad.
+              Una oferta orientada al uso gastronómico, la presentación, el despacho y
+              distintas necesidades comerciales.
             </p>
           </div>
 
-          <div class="image-grid">
-            <div class="image-placeholder">Planta</div>
-            <div class="image-placeholder">Stock</div>
-            <div class="image-placeholder">Producción</div>
-            <div class="image-placeholder">Producto</div>
+          <div class="product-list">
+            <article class="product reveal">
+              <span class="product-number">01</span>
+              <div><h3>Servilletas y manteles</h3><p>Productos de papel para usos gastronómicos y comerciales.</p></div>
+              <span class="product-tag">Papel</span>
+            </article>
+            <article class="product reveal">
+              <span class="product-number">02</span>
+              <div><h3>Bolsas de papel</h3><p>Alternativas para entrega, presentación y despacho.</p></div>
+              <span class="product-tag">Comercio</span>
+            </article>
+            <article class="product reveal">
+              <span class="product-number">03</span>
+              <div><h3>Bobinas y papel en rollo</h3><p>Formatos para distintas aplicaciones comerciales e industriales.</p></div>
+              <span class="product-tag">Bobinas</span>
+            </article>
+            <article class="product reveal">
+              <span class="product-number">04</span>
+              <div><h3>Bandejas, platos y envases</h3><p>Productos de cartón para presentación y expendio.</p></div>
+              <span class="product-tag">Cartón</span>
+            </article>
+            <article class="product reveal">
+              <span class="product-number">05</span>
+              <div><h3>Opciones personalizadas</h3><p>Impresión y desarrollos sujetos a la línea y a cada necesidad.</p></div>
+              <span class="product-tag">A medida</span>
+            </article>
           </div>
         </div>
       </section>
 
-      <section id="contacto" class="section section-contact">
+      <section class="section advantages">
+        <div class="container advantages-layout">
+          <div class="advantages-title reveal">
+            <p class="eyebrow eyebrow-light">Por qué LASA</p>
+            <h2>Capacidad industrial. Trato directo.</h2>
+          </div>
+          <div class="advantages-grid">
+            <article class="reveal"><span>01</span><h3>Producción propia</h3><p>Una estructura de trabajo vinculada directamente con la fabricación.</p></article>
+            <article class="reveal"><span>02</span><h3>Atención mayorista</h3><p>Propuestas pensadas para clientes comerciales y distribuidores.</p></article>
+            <article class="reveal"><span>03</span><h3>Contacto cercano</h3><p>Comunicación directa para entender y responder cada consulta.</p></article>
+            <article class="reveal"><span>04</span><h3>Flexibilidad</h3><p>Líneas estándar y posibilidades de personalización según producto.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section factory" id="fabrica">
+        <div class="container">
+          <div class="section-heading heading-row reveal">
+            <div><p class="eyebrow">Fábrica y producción</p><h2>La empresa, tal como es.</h2></div>
+            <p>Este espacio está preparado para mostrar imágenes auténticas de planta, maquinaria, stock y producto terminado.</p>
+          </div>
+          <div class="gallery-grid">
+            <div class="media-placeholder gallery-main reveal"><span>Planta / maquinaria</span><small>Imagen oficial pendiente</small></div>
+            <div class="media-placeholder reveal"><span>Producción</span><small>Imagen oficial pendiente</small></div>
+            <div class="media-placeholder reveal"><span>Producto terminado</span><small>Imagen oficial pendiente</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contacto">
         <div class="container contact-layout">
-          <div class="section-copy">
-            <p class="section-label">Contacto</p>
-            <h2>Hablemos de su consulta</h2>
-            <p>
-              Si necesita presupuesto o quiere consultar por nuestras líneas de
-              productos, puede escribirnos de forma directa.
-            </p>
-
-            <div class="contact-actions">
-              <a href="#" class="btn btn-primary">Hablar por WhatsApp</a>
+          <div class="contact-copy reveal">
+            <p class="eyebrow">Contacto comercial</p>
+            <h2>Cuéntenos qué necesita.</h2>
+            <p>Consúltenos por productos, opciones personalizadas o una propuesta para su negocio.</p>
+            <div class="contact-details">
+              <div><span>Ubicación</span><strong>Ringuelet, La Plata</strong></div>
+              <div><span>WhatsApp y teléfono</span><strong>Dato pendiente de confirmación</strong></div>
+              <div><span>Email</span><strong>Dato pendiente de confirmación</strong></div>
             </div>
           </div>
 
-          <form class="contact-form">
-            <label>
-              Nombre
-              <input type="text" name="nombre" placeholder="Su nombre" />
-            </label>
-
-            <label>
-              WhatsApp o Email
-              <input
-                type="text"
-                name="contacto"
-                placeholder="Su WhatsApp o correo"
-              />
-            </label>
-
-            <label>
-              Mensaje
-              <textarea
-                name="mensaje"
-                rows="5"
-                placeholder="Cuéntenos qué necesita"
-              ></textarea>
-            </label>
-
-            <button type="submit" class="btn btn-primary">Enviar consulta</button>
+          <form class="contact-form reveal" data-contact-form>
+            <label>Nombre y empresa<input type="text" name="nombre" autocomplete="name" required /></label>
+            <label>WhatsApp o email<input type="text" name="contacto" autocomplete="email" required /></label>
+            <label>¿Qué necesita?<textarea name="mensaje" rows="4" required></textarea></label>
+            <button class="button" type="submit">Preparar consulta</button>
+            <p class="form-status" role="status" data-form-status></p>
+            <small>El envío se habilitará cuando se confirme el canal comercial oficial.</small>
           </form>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <div>
-          <strong>LASA Papelera</strong>
-          <p>Ringuelet, La Plata</p>
-        </div>
+    <!-- Pendiente: reemplazar el href por el enlace oficial de WhatsApp. -->
+    <a class="whatsapp-float" href="#contacto" aria-label="Ir a contacto para consultar por WhatsApp">
+      <span>WhatsApp</span><strong>WA</strong>
+    </a>
 
-        <p>Más de 60 años acompañando a clientes comerciales.</p>
+    <footer class="site-footer">
+      <div class="container footer-top">
+        <a class="brand brand-footer" href="#inicio"><span class="brand-mark">LASA</span><span class="brand-name">Papelera</span></a>
+        <p>Productos de papel y cartón para clientes comerciales.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/lorenzo.annecchini.75" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.instagram.com/lorenzo.annecchini.sa/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
       </div>
+      <div class="container footer-bottom"><span>Lorenzo Annecchini S.A.</span><span>Ringuelet · La Plata · Buenos Aires</span></div>
     </footer>
 
     <script src="./script.js"></script>
   </body>
-</html>  
+</html>
